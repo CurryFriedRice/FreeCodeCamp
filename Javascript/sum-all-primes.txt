@@ -1,0 +1,37 @@
+function sumPrimes(num) {
+  let finalVal = 0;
+  let i = 2;
+  while(i<=num){
+    if(i==2 || i==3){
+      finalVal += i;
+      //console.log("First two" + finalVal);
+    }
+    else if(i%2 == 0){
+      //if it can be divided by 2 should just gtfo
+      //console.log(i + " is an even number");
+    }else{
+      let internal = 2;
+      
+      while(internal <= Math.ceil(i/2)){
+     
+        if( (i % internal) === 0){
+          //console.log(i + " is has a factor of " + internal);
+          break;
+        }else if(internal === Math.ceil(i/2)-1 ){
+          console.log("Prime Number | "+ i + " | Internal Check " + internal);
+          finalVal = finalVal + i;
+        }
+        //console.log("Internal "+internal +" | Current "+ i + " | Final " + finalVal);
+        internal++;
+
+      }
+    }
+
+    i++;
+  }
+  console.log(finalVal);
+  return finalVal;
+}
+
+//sumPrimes(10);
+sumPrimes(977);

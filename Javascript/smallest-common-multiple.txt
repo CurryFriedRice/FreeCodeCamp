@@ -1,0 +1,50 @@
+function smallestCommons(arr) {
+  arr = arr.sort(function(a,b){return a-b});
+  
+//  var lower = arr[0];
+//  var higher = arr[1];
+
+
+  let allVals = [];
+  for(let i = arr[0]; i<= arr[1]; i++){
+    allVals.push(i);
+  }
+//  console.log(allVals);
+
+  let count = 1;
+  let finalValue =0;
+  let match = false;
+  
+  while(!match){
+    finalValue = count * allVals[allVals.length-2] * allVals[allVals.length-1];
+    console.log("Trying | " + finalValue);
+    for(let i = allVals[0]; i<= allVals[allVals.length-1]; i++){
+      if(finalValue % i != 0){
+        console.log(i + " | " + finalValue +" | Does not div");        
+        break;
+        }else{
+            console.log(i + " | " + finalValue +" | Passes");
+          if(i == allVals[allVals.length-1] && finalValue % i ==0){
+            match = true;
+          }
+        }
+       
+    }
+    count++;
+  }
+  console.log(finalValue);
+  return finalValue;
+}
+
+
+//console.log(smallestCommons([1,5]));
+//console.log(smallestCommons([5, 1]));
+//console.log(smallestCommons([2, 10]));
+console.log(smallestCommons([1, 13]));
+//console.log(smallestCommons([23, 18]));
+/*
+if((smallestMatching%arr[0] === 0) &&(smallestMatching%arr[1] === 0)){
+      console.log("FOUND MATCH|" + smallestMatching);
+      break;
+    };
+    */

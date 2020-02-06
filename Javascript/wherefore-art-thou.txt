@@ -1,0 +1,35 @@
+function whatIsInAName(collection, source) {
+  // What's in a name?
+  var arr = [];
+  // Only change code below this line
+  let sourceKeys = Object.keys(source);
+  console.log("SK " +sourceKeys);
+  
+  let ranVal = collection.filter(function(value){
+    let myKeys = Object.keys(value);
+    console.log("MK " + myKeys);
+    return sourceKeys.every(function(key){
+       console.log("$$$$$ "+ source[key]);
+       console.log(value[key]+ " | "+ value.hasOwnProperty(key));
+       return value.hasOwnProperty(key) && source[key] === value[key];
+    });
+   
+  });
+
+
+  arr = ranVal;
+  console.log(arr);
+  // Only change code above this line
+  return arr;
+}
+
+whatIsInAName([
+     { first: "Romeo", last: "Montague" }, 
+     { first: "Mercutio", last: null }, 
+     { first: "Tybalt", last: "Capulet" }
+  ], 
+  { last: "Capulet" }
+);
+
+//whatIsInAName([{ "apple": 1 }, { "apple": 1 }, { "apple": 1, "bat": 2 }], { "apple": 1 });
+//console.log(whatIsInAName([{ "apple": 1, "bat": 2 }, { "bat": 2 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "bat": 2 }));

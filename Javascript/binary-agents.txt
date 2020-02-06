@@ -1,0 +1,40 @@
+function binaryAgent(str) {
+  let arr = str.split(" ")
+  
+  const binaryToChar = function(value){
+    let total = 0;
+    value = value.split("");
+    value = value.reverse();
+    value = value.join("");
+    for(let i = 0; i < value.length; i++){
+      switch(value[i]){
+        case "0":
+  //        console.log("Honk");
+          total = total;
+        break;
+        case "1":
+  //      console.log("Woof");
+          total += Math.pow(2,i);
+        break;
+        default:
+        console.log("WHAT?!?!?");
+        break;
+      }
+  //     console.log(total);
+       //console.log("POWER 2 OF " + i + " | " +  Math.pow(2,i))
+    }
+    //console.log(String.fromCharCode(total));
+    return String.fromCharCode(total);
+  }
+  //arr = binaryToChar(arr[i]);
+  //console.log(arr);
+
+  let strang = "";
+  for (let i = 0; i < arr.length; i++){
+    strang += binaryToChar(arr[i]);
+  } 
+  console.log(strang);
+  return strang;
+}
+
+console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"));

@@ -1,0 +1,27 @@
+function sumFibs(num) {
+  let prevVal = 1;
+  let currVal = 0;
+  let retVal = 0;
+  let i = 0;
+
+  while(currVal <= num){
+    let temp = currVal;
+   
+
+    if(currVal %2 == 1){
+        retVal += currVal;
+    }
+    currVal += prevVal;
+    prevVal = temp;
+    i=currVal;
+  }
+  console.log(retVal);
+  return retVal;
+}
+
+sumFibs(4);
+sumFibs(1000);
+//sumFibs(4000000);
+//sumFibs(75024);
+//sumFibs(75025);
+

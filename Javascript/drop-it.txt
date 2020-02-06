@@ -1,0 +1,38 @@
+function dropElements(arr, func) {
+  // Drop them elements.
+let match = false;
+let array = [];
+let i = 0;
+
+
+while(i < arr.length){
+  if(func(arr[i]) || match){
+    //console.log(arr[i]);
+    array.push(arr[i]);
+    match = true;
+  }
+  i++;
+}
+
+/*
+  let array = arr.filter(function(item){
+    if(func(item)){
+      match = true;
+    }
+   
+    console.log("item | " + item + " | "+func(item) + " | " + match );  
+      if(match){
+        return item;
+      }
+  });
+  
+  //console.log(array);
+  */
+  return array;
+}
+console.log(dropElements([1, 2, 3, 4], function(n) {return n >= 3;}));
+console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}));
+console.log(dropElements([1, 2, 3], function(n) {return n > 0;}));
+console.log(dropElements([1, 2, 3, 4], function(n) {return n > 5;}));
+console.log(dropElements([1, 2, 3, 7, 4], function(n) {return n > 3;}));
+console.log(dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;}));
