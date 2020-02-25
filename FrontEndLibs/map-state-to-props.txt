@@ -1,0 +1,15 @@
+const state = [];
+
+// change code below this line
+const mapStateToProps = (data) =>{
+    return {
+        messages: data
+    };
+}
+
+const mapDispatchToProps = (data) =>{
+    return {
+
+    };
+}
+
