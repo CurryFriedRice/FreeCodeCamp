@@ -1,64 +1,64 @@
 
 {
-  
-  'setName': "Drumkit",
-  'instruments': 
+  "setOne": {
+  "setName" : "Drumkit",
+  "instruments": 
     [
     {
-      'keyCode': 81,
-      'keyChar': "Q",
-      'id': "Closed Hat",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/ClosedHat.wav"
+      "keyCode": 81,
+      "keyChar": "Q",
+      "id": "Closed Hat",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/ClosedHat.wav"
     },
     {
-      'keyCode': 87,
-      'keyChar': "W",
-      'id': "Open Hat 1",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/OpenHat01.wav"
+      "keyCode": 87,
+      "keyChar": "W",
+      "id": "Open Hat 1",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/OpenHat01.wav"
     },
     {
-      'keyCode': 69,
-      'keyChar': "E",
-      'id': "Open Hat 2",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/OpenHat02.wav"
+      "keyCode": 69,
+      "keyChar": "E",
+      "id": "Open Hat 2",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/OpenHat02.wav"
     },
     {
-      'keyCode': 65,
-      'keyChar': "A",
-      'id': "Snare 1",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare1.wav"
+      "keyCode": 65,
+      "keyChar": "A",
+      "id": "Snare 1",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare1.wav"
     },
     {
-      'keyCode': 83,
-      'keyChar': "S",
-      'id': "Snare 2",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare2.wav"
+      "keyCode": 83,
+      "keyChar": "S",
+      "id": "Snare 2",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare2.wav"
     },
     {
-      'keyCode': 68,
-      'keyChar': "D",
-      'id': "Snare 3",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare3.wav"
+      "keyCode": 68,
+      "keyChar": "D",
+      "id": "Snare 3",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare3.wav"
     },
     {
-      'keyCode': 90,
-      'keyChar': "Z",
-      'id': "Snare 4",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare4.wav"
+      "keyCode": 90,
+      "keyChar": "Z",
+      "id": "Snare 4",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Snare4.wav"
     },
     {
-      'keyCode': 88,
-      'keyChar': "X",
-      'id': "Snare Buzz",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/SnareBuzz.wav"
+      "keyCode": 88,
+      "keyChar": "X",
+      "id": "Snare Buzz",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/SnareBuzz.wav"
     },
     {
-      'keyCode': 67,
-      'keyChar': "C",
-      'id': "Kick",
-      'url': "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Kick.wav"
+      "keyCode": 67,
+      "keyChar": "C",
+      "id": "Kick",
+      "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Kick.wav"
     }
-  ]
-  
+    ]
+  }
 };
    
