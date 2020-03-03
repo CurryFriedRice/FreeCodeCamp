@@ -1,5 +1,6 @@
-// JavaScript source code
+
 {
+  
   setName: "Drumkit",
   instruments: 
     [
