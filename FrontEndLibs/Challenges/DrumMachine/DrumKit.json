@@ -1,6 +1,6 @@
 
 {
-
+  "setOne": {
   "setName" : "Drumkit",
   "instruments": 
     [
@@ -59,6 +59,6 @@
       "url": "https://raw.githubusercontent.com/CurryFriedRice/FreeCodeCamp/master/FrontEndLibs/Challenges/DrumMachine/Kick.wav"
     }
     ]
-  
+  }
 };
    
